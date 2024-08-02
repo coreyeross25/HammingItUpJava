@@ -14,7 +14,7 @@ public class HammingTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Test
-    public void testNoDistanceBetweenEmptyStrands() {
+    public void testNoDistanceBetweenEmptyStrands() throws Exception {
         assertEquals(0, new Hamming("", "").getHammingDistance());
     }
 
